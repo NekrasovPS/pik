@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/main.min.css" />
+    
+    <title>Макет</title>
+  </head>
+  <body>
+    <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__wrapper">
+                <ul>
+                    <li><a href="#"><span>Ремонт в москве</span></a></li>
+                    <li><a href="#"><span>Ремонт в санкт-петербурге</span></a></li>
+                    <li><a href="#"><span>Акции</span></a></li>
+                    <li><a href="#"><span>почему нам доверяют</span></a></li>
+                    <li><a href="#"><span>контакты</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="header__logo"><img src="img/logo.png" alt=""></div>
+                    <div class="header__text"><p>Специализированный автосервис</p></div>
+                </div>
+                <div class="header__right">
+                    <div class="header__time">
+                        <img src="img/calendar.svg" alt="" class="header__time--img">
+                        <div class="header__time--text">
+                            <p>Режим работы</p>
+                            <p>Ежедневно 09:00 - 21:00</p>
+                        </div>
+                    </div>
+                    <div class="header__callback">
+                        <a href="#" class="header__callback--link open-modal">
+                            <img src="img/phone.svg" alt="">
+                            <img src="img/line.svg" alt="">
+                            <span>Заказать звонок</span>
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <button id="openMenu"><img src="img/burger.svg" alt=""></button>
+                        <div class="menu" id="menu">
+                            <div class="menu__top">
+                                <h3>Москва</h3>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+74993912559">+7 (499) 391-25-59<span>Вольво</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+74993912559">+7 (499) 391-25-59<span>Лексус</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+74993912559">+7 (499) 391-25-59<span>Тойота</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+74993912559">+7 (499) 391-25-59<span>ВАГ</span></a>
+                                </div>
+                            </div>
+                            <div class="menu__bottom">
+                                <h3>Санкт-Петербург</h3>
+                                <div class="menu__item">
+                                    <p>ул. Ворошилова, 2АЕ</p>
+                                    <a href="tel:+78129429786">+7 (812) 942-97-86<span>Лексус</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+78129429786">+7 (812) 942-97-86<span>БМВ</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+78129429786">+7 (812) 942-97-86<span>Мерседес</span></a>
+                                </div>
+                                <div class="menu__item">
+                                    <p>ул. Ибрагимова, вл31А</p>
+                                    <a href="tel:+78129429786">+7 (812) 942-97-86<span>ВАГ</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__callback--md">
+                    <a href="#" class="header__callback--link">
+                        <img class="img1" src="img/phone.svg" alt="">
+                        <img class="img2" src="img/line.svg" alt="">
+                        <span>Заказать звонок</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal">
+    <div class="modal__wrapper">
+        <div class="modal__title"><h3>ЗАПИШИСЬ</h3></div>
+        <div class="modal__form">
+            <form action="#">
+                <input class="name" type="text" placeholder="Ваше имя">
+                <input class="tel"  type="tel" placeholder="Введите телефон">
+                <select class="list" name="">
+                  <option value="">Выберите город и адрес</option>
+                  <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                  <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                  <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                  <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                  <option value="">г. Санкт-Петербург, ул. Ворошилова, 2АЕ</option>
+                  <option value="">г. Санкт-Петербург, Боровая ул., 116</option>
+                  <option value="">г. Санкт-Петербург, Кушелевская дорога, 20</option>
+                  <option value="">г. Санкт-Петербург, Кушелевская дорога, 20</option>
+                </select>
+                <label for="form1">
+                  <input type="checkbox" id="form1">
+                  <p>Я даю согласие на обработку персональных данных</p>
+                </label>
+                <button class="get-close" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+              </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="header-fix">
+    <div class="container">
+        <div class="header-fix__wrapper">
+            <div class="header-fix__left">
+                <div class="header-fix__logo"><img src="img/logo.png" alt=""></div>
+                <div class="header-fix__text"><p>Специализированный автосервис</p></div>
+            </div>
+            <div class="header-fix__right">
+                <div class="header-fix__box">
+                    <div class="header-fix__time">
+                        <img src="img/calendar.svg" alt="" class="header-fix__time--img">
+                        <div class="header-fix__time--text">
+                            <p><b>Без выходных</b>  09:00 - 21:00</p>
+                        </div>
+                    </div>
+                    <div class="header-fix__phone">
+                        <img src="img/telephone.svg" alt="" class="header-fix__phone--img">
+                        <div class="header-fix__phone--link">
+                            <a href="tel:+78129083200">+7 (812) 908-32-00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-fix__callback">
+                    <a href="#" class="header-fix__callback--link open-modal">
+                        <img src="img/phone.svg" alt="">
+                        <img src="img/line.svg" alt="">
+                        <span>Заказать звонок</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <main>
+      <section>
+        <div class="main">
+          <div class="main__video">
+            <img src="img/main-bg.jpg" alt="">
+            <!-- <video preload="auto" muted="" playsinline="" autoplay="autoplay" loop="loop">
+                <source src="video/video.mp4" type="video/mp4">
+            </video> -->
+          </div>
+          <div class="container">
+            <div class="main__wrapper">
+              <div class="main__title"><h1><span>АВТО</span>СЕРВИС</h1></div>
+              <div class="main__services">
+                <p>Ремонт </p>
+                <span>/</span>
+                <p>Обслуживание</p>
+                <span>/</span>
+                <p>Тюнинг</p>
+              </div>
+              <div class="main__city">
+                <p>МОСКВА</p>
+                <img src="img/ellipse.svg" alt="">
+                <p>Санкт-Петербург</p>
+              </div>
+              <div class="main__list">
+                <ul>
+                  <li><img src="img/ellipse.svg" alt="">Профильный сервис</li>
+                  <li><img src="img/ellipse.svg" alt="">Заезд в день обращения</li>
+                </ul>
+                <ul>
+                  <li><img src="img/ellipse.svg" alt="">Запчасти в наличии</li>
+                  <li><img src="img/ellipse.svg" alt="">Работаем с <span>2011 года</span></li>
+                </ul>
+              </div>
+              <div class="main__callback">
+                <a class="open-modal" href="#">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="recom">
+          <div class="container">
+            <div class="recom__wrapper">
+              <div class="recom__title"><h2>Ремонтируем в Санкт-Петербурге</h2></div>
+              <div class="recom__items">
+                <div class="recom__item">
+                  <img src="img/BMW.png" alt="">
+                  <p>BMW</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Mercedes.png" alt="">
+                  <p>Mercedes</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Audi.png" alt="">
+                  <p>Audi</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Volkswagen.png" alt="">
+                  <p>Volkswagen</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Skoda.png" alt="">
+                  <p>Skoda</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Land-Rover.png" alt="">
+                  <p>Land Rover</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Lexus.png" alt="">
+                  <p>Lexus</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Toyota.png" alt="">
+                  <p>Toyota</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Nissan.png" alt="">
+                  <p>Nissan</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Infiniti.png" alt="">
+                  <p>Infiniti</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Porsche.png" alt="">
+                  <p>Porsche</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="recom">
+          <div class="container">
+            <div class="recom__wrapper">
+              <div class="recom__title"><h2>Ремонтируем в Москве</h2></div>
+              <div class="recom__items">
+                <div class="recom__item">
+                  <img src="img/Volvo.png" alt="">
+                  <p>Volvo</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/BMW.png" alt="">
+                  <p>BMW</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Mini-BMW.png" alt="">
+                  <p>Mini BMW</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Lexus.png" alt="">
+                  <p>Lexus</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Toyota.png" alt="">
+                  <p>Toyota</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Nissan.png" alt="">
+                  <p>Nissan</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/Bentley.png" alt="">
+                  <p>Bentley</p>
+                </div>
+                <div class="recom__item">
+                  <img src="img/VAG.png" alt="">
+                  <p>VAG</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>          
+        <div class="repair">
+          <div class="container">
+            <div class="repair__wrapper">
+              <div class="repair__repair">
+                <h3>Ремонтная зона <br> <span>по дилерским стандартам</span></h3>
+                <h4>команда профессионалов</h4>
+                <ul>
+                  <li><img src="img/ellipse.svg" alt="">По каждой марке собрана команда высококлассных специалистов</li>
+                  <li><img src="img/ellipse.svg" alt="">Опыт сотрудников свыше 10 лет с маркой</li>
+                  <li><img src="img/ellipse.svg" alt="">Станция оснащена современным специализированным инструментом</li>
+                </ul>
+              </div>
+              <div class="repair__promotion">
+                <div class="repair__item">
+                  <span>акция</span>
+                  <h4>Диагностика подвески</h4>
+                  <div class="repair__btn">
+                    <span>БЕСПЛАТНО</span>
+                    <button>ПОДРОБНЕЕ</button>
+                  </div>
+                </div>
+                <div class="repair__item">
+                  <span>акция</span>
+                  <h4>Диагностика подвески</h4>
+                  <div class="repair__btn">
+                    <span>499 ₽</span>
+                    <button>ПОДРОБНЕЕ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="me">
+           <div class="container">
+            <div class="me__wrapper">
+              <div class="me__title">
+                <h2>Почему нам доверяют клиенты</h2>
+                <p>Наши преимущества позволяют нам быть уверенными в качестве выполняемых работ.</p>
+              </div>
+              <div class="me__text">
+                <div class="me__left">
+                  <h3><img src="img/security.svg" alt="">Профессионалы</h3>
+                  <p>Сотрудники сформированы в команды, которые специализируются на одной определенной марке автомобилей;</p>
+                  <h3><img src="img/security.svg" alt="">Оснащение</h3>
+                  <p>Станция оснащена новейшим оборудование и специальным инструментом для выполнения самых сложных работ;</p>
+                  <h3><img src="img/security.svg" alt="">Развал-схождение 3D</h3>
+                  <p>Новый стенд развал-схождения Hunter 3D последнего поколения;</p>
+                </div>
+                <div class="me__right">
+                  <h3><img src="img/security.svg" alt="">Комфорт для клиентов</h3>
+                  <p>Удобная клиентская зона, Wi-fi, чай, кофе;</p>
+                  <h3><img src="img/security.svg" alt="">Развал-схождение 3D</h3>
+                  <p>У нас Вы можете обслужить свой автомобиль, провести диагностику, ремонт, тюнинг. Комплекс услуг по уходу за авто, от мойки до детейлинга.</p>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery">
+          <div class="container">
+            <div class="gallery__wrapper">
+              <a href="img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                <img src="img/gallery-1.png" />
+              </a>
+              <a href="img/gallery-2.png" data-fancybox="gallery" data-caption="Caption #2">
+                <img src="img/gallery-2.png" />
+              </a>
+              <a href="img/gallery-3.png" data-fancybox="gallery" data-caption="Caption #1">
+                <img src="img/gallery-3.png" />
+              </a>
+              <a href="img/gallery-4.png" data-fancybox="gallery" data-caption="Caption #2">
+                <img src="img/gallery-4.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="team">
+          <div class="container">
+            <div class="team__wrapper">
+              <h3>Одно направление - одна команда</h3>
+              <p>Под каждую марку автомобилей собрана отдельная команда с большим опытом. Начиная от механика, до руководителя отдела. Много лет мы собирали лучших специалистов узкоспециализирующихся на одной марке автомобиля. Такой подход позволяет выполнять работы максимально качественно и соблюдать сроки.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="app">
+          <div class="container">
+            <div class="app__wrapper">
+              <div class="app__title"><h2>заявка на ремонт</h2></div>
+              <div class="app__inner">
+                <div class="app__left">
+                  <img class="img-app2" src="img/app-bg2.png" alt="">
+                  <h3>Остались вопросы?</h3>
+                  <p>Получите <span>БЕСПЛАТНУЮ</span> консультацию специалиста прямо сейчас</p>
+                  <div class="app__img">
+                    <img src="img/man.png" alt="">
+                    <div class="app__text">
+                      <p>Ильдар</p>
+                      <span>Специалист ПИК</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="app__right">
+                  <img class="img-app1" src="img/app-bg1.png" alt="">
+                  <div class="form">
+                    <div class="form__title">
+                      <h3>Свяжитеcь с нами</h3>
+                      <p>Оставьте заявку</p>
+                    </div>
+                    <form action="#">
+                      <input class="tel"  type="tel" placeholder="Введите телефон">
+                      <select class="list" name="">
+                        <option value="">Выберите город и адрес</option>
+                        <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                        <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                        <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                        <option value="">г. Москва, ул. Ибрагимова, вл31А</option>
+                        <option value="">г. Санкт-Петербург, ул. Ворошилова, 2АЕ</option>
+                        <option value="">г. Санкт-Петербург, Боровая ул., 116</option>
+                        <option value="">г. Санкт-Петербург, Кушелевская дорога, 20</option>
+                        <option value="">г. Санкт-Петербург, Кушелевская дорога, 20</option>
+                      </select>
+                      <label for="form2">
+                        <input type="checkbox" id="form2">
+                        <p>Я даю согласие на обработку персональных данных</p>
+                      </label>
+                      <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="contact">
+          <div class="contact__wrapper">
+            <div class="contact__title"><h2>контакты автосервисов</h2></div>
+            <div class="contact__inner">
+              <div class="tabs">
+                <div class="tabs__btn">
+                  <button class="tab-button" onclick="openTab('tab1')">Санкт-Петербург</button>
+                  <button class="tab-button" onclick="openTab('tab2')">Москва </button>
+                </div>
+        
+                <div id="tab1" class="tab-content">
+                  <div class="tab__left">
+                    <div class="tab__items">
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Вольво</p>
+                          <span>Кушелевская дорога, 20</span>
+                          <a href="tel:88129130538">8 (812) 913-05-38</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Лексус</p>
+                          <span>Боровая, 116</span>
+                          <a href="tel:88129998553">8 (812) 999-85-53</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Тойота</p>
+                          <span>Дорога на Турухтанные Острова, 12</span>
+                          <a href="tel:88120000000">8 (812) 000-00-00</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>ВАГ</p>
+                          <span>Кушелевская дорога, 20</span>
+                          <a href="tel:88129130538">8 (812) 913-05-38</a>
+                        </div>
+                        </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <h4>Режим работы</h4>
+                          <h5>Ежедневно</h5>
+                          <h6>с 09:00 до 21:00</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__right">
+                    <iframe src="https://yandex.ru/map-widget/v1/?scroll=false&source=constructor-api&um=constructor%3A04a8e00d3d756f3bb8c985c50f72712a73a94044c9272a1820b2c96e3a5ab3e3" frameborder="0"></iframe>
+                  </div>
+                </div>
+        
+                <div id="tab2" class="tab-content">
+                  <div class="tab__left">
+                    <div class="tab__items">
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Вольво</p>
+                          <span>Кушелевская дорога, 20</span>
+                          <a href="tel:88129130538">8 (812) 913-05-38</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Лексус</p>
+                          <span>Боровая, 116</span>
+                          <a href="tel:88129998553">8 (812) 999-85-53</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>Тойота</p>
+                          <span>Дорога на Турухтанные Острова, 12</span>
+                          <a href="tel:88120000000">8 (812) 000-00-00</a>
+                        </div>
+                      </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <p>ВАГ</p>
+                          <span>Кушелевская дорога, 20</span>
+                          <a href="tel:88129130538">8 (812) 913-05-38</a>
+                        </div>
+                        </div>
+                      <div class="tab__item">
+                        <div class="tab__img"><img src="img/geo.svg" alt=""></div>
+                        <div class="tab__text">
+                          <h4>Режим работы</h4>
+                          <h5>Ежедневно</h5>
+                          <h6>с 09:00 до 21:00</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__right">
+                    <iframe src="https://yandex.ru/map-widget/v1/?scroll=false&source=constructor-api&um=constructor%3A04a8e00d3d756f3bb8c985c50f72712a73a94044c9272a1820b2c96e3a5ab3e3" frameborder="0"></iframe>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    
+    
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="inner__footer">
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
